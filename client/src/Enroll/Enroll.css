@@ -1,0 +1,98 @@
+/* Container */
+.enroll-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(white);
+  padding: 20px;
+}
+
+/* Card */
+.enroll-card {
+  background: #fff;
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.5s ease;
+}
+
+/* Title */
+.enroll-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form */
+.enroll-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+.enroll-card input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Focus effect */
+.enroll-card input:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 6px rgba(79, 172, 254, 0.4);
+  outline: none;
+}
+
+/* Readonly fields */
+.enroll-card input[readonly] {
+  background: #f5f7fa;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Button */
+.enroll-card button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #4facfe;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover */
+.enroll-card button:hover {
+  background: #3a8ee6;
+  transform: translateY(-2px);
+}
+
+/* Animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 500px) {
+  .enroll-card {
+    padding: 20px;
+  }
+
+  .enroll-card h2 {
+    font-size: 20px;
+  }
+}

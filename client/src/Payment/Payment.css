@@ -1,0 +1,101 @@
+.payment-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f9fa;
+
+}
+
+.payment-card {
+  width: 400px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-top: 80px;
+}
+
+.timer {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Course Summary */
+.course-summary {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.course-summary h3 {
+  margin-bottom: 10px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.total {
+  font-weight: bold;
+  border-top: 1px solid #eee;
+  padding-top: 8px;
+}
+
+/* QR */
+.qr-section {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.qr-img {
+  width: 180px;
+  margin: 10px 0;
+}
+
+/* Button */
+.pay-btn {
+  width: 100%;
+  padding: 12px;
+  background: #a435f0; /* Udemy purple */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  background: #8710d8;
+}
+
+.success-box {
+  text-align: center;
+  padding: 15px;
+  background: #e6fffa;
+  border-radius: 8px;
+}
+
+.expired {
+  color: red;
+  text-align: center;
+}
+.go-course-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.go-course-btn:hover {
+  background: #218838;
+}

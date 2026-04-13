@@ -1,0 +1,250 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+/* Container */
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo h2 {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+/* Menu */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+  color: #333;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  color: #22c55e;
+}
+
+/* Right Side */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Profile Icon */
+.profile-icon {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  margin-right: 5px;
+  padding: 8px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  transition: 0.3s;
+}
+
+.profile-icon:hover {
+  color: #22c55e;
+}
+
+/* Buttons */
+.login-btn {
+  background: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.signup-btn {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover */
+.signup-btn:hover {
+  background: #16a34a;
+}
+
+.admin-btn:hover {
+  background: #dc2626;
+}
+/* Navbar */
+.navbar {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+/* Container */
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo h2 {
+  color: #22c55e;
+}
+
+/* Menu */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+/* Right */
+.nav-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Profile */
+.profile-icon {
+  padding: 8px;
+  border-radius: 50%;
+  background: #f1f5f9;
+}
+
+/* Buttons */
+.login-btn {
+  background: transparent;
+  border: none;
+}
+
+.signup-btn {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.admin-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+/* Hamburger */
+.menu-icon {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* 🔥 MOBILE */
+@media (max-width: 768px) {
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-right {
+    position: absolute;
+    top: 200px;
+    left: -100%;
+    width: 100%;
+    flex-direction: column;
+    background: white;
+    padding: 10px;
+    transition: 0.3s;
+  }
+
+  .nav-right.active {
+    left: 0;
+  }
+}
+/* Username */
+.username {
+  margin-right: 10px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Logout button */
+.logout-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Welcome text below navbar */
+.welcome-text {
+  padding: 10px 30px;
+  background: #f5f7ff;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+}
+.welcome-text {
+  background: #ffffff;              /* ✅ White background */
+  padding: 14px 30px;
+  font-size: 18px;                 /* ✅ Bigger text */
+  font-weight: 600;                /* ✅ Bold */
+  color: #222;                     /* ✅ Dark text */
+  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
